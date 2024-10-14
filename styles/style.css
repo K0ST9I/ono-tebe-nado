@@ -1,1 +1,67 @@
-/* место для вашего кода */
+.header{
+  display: grid;
+  grid-template-columns: 453px 240.52px auto;
+  grid-template-rows: 1fr;
+  background-color: aliceblue;
+  width: 1052px;
+  height: 105px;
+  margin: 92px 24px 0;
+}
+
+.menu{
+  justify-self:center;
+  align-self: center;
+  background-color: yellow;
+  width: 391.48px;
+  height: 22px;
+  margin-left: 26.52px;
+  font-size: 18px;
+  line-height: 21.13px;
+  font-weight: 400;
+  font-style: normal;
+  
+}
+
+.main_li{
+  list-style-type: none;
+  flex-direction: row;
+}
+
+.lots_li,
+.auction_li{
+  list-style-type: circle;
+  flex-direction: row;
+}
+
+.list_ul{
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo{
+  width: auto;
+  height: 105px;
+}
+
+.background_svg_head{
+  width: 148px;
+  height: 105px;
+}
+
+.logo_head{
+  position: relative;
+  width: 129.11px;
+  height: 104.65px;
+  left:0;
+  bottom: 0;
+}
+.adress_head{
+  width: 240.52px;
+  height: 98px;
+  justify-self: end;
+  align-self: stretch;
+  font-size: 18px;
+  line-height: 24.3px;
+  font-weight: 400;
+  font-style: normal;
+}
