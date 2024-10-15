@@ -1,3 +1,7 @@
+body{
+  display: flex;
+}
+
 .header {
   display: grid;
   grid-template-columns: 453px 240.52px auto;
@@ -6,10 +10,11 @@
   width: 1052px;
   height: 105px;
   margin: 92px 24px 0;
+  
 }
 
 .menu {
-  justify-self:center;
+  /*justify-self:center;*/
   align-self: center;
   background-color: yellow;
   width: 391.48px;
@@ -19,7 +24,10 @@
   line-height: 21.13px;
   font-weight: 400;
   font-style: normal;
-  
+  padding-top: 3px;
+  text-transform: underline;  
+  letter-spacing: 1%;
+  text-underline-offset: 4px;
 }
 
 .main_li {
@@ -39,8 +47,10 @@
 }
 
 .logo {
-  width: auto;
+  width: 129.11px;
   height: 105px;
+  margin-left: 10px;
+  margin-top: 1px;
 }
 
 .background_svg_head {
@@ -59,11 +69,15 @@
   width: 240.52px;
   height: 98px;
   justify-self: end;
-  align-self: stretch;
+  /*align-self: stretch;*/
   font-size: 18px;
   line-height: 24.3px;
   font-weight: 400;
   font-style: normal;
+  margin-top: 6.5px;
+  margin-right: 24.5px;
+  
+
 }
 
 .nomberphone_head {
@@ -75,6 +89,7 @@
   border: 1px 0px 0px 0px;
   opacity: 0px;
   text-underline-position: under;
+  text-underline-offset: 0.8px;
 }
 .email_head {
 width: 240px;
@@ -84,15 +99,13 @@ left: 786px;
 gap: 0px;
 border: 1px 0px 0px 0px;
 opacity: 0px;
+text-underline-offset: 2.5px;
 }
 
 .place_head{
-  width: 237px;
-  height: 49px;
-  top: 54px;
-  left: 787px;
-  gap: 0px;
-  opacity: 0px;  
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24.3px;
 }
 .main_no_decor {
   text-decoration: none;
