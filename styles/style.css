@@ -1,4 +1,4 @@
-.header{
+.header {
   display: grid;
   grid-template-columns: 453px 240.52px auto;
   grid-template-rows: 1fr;
@@ -8,7 +8,7 @@
   margin: 92px 24px 0;
 }
 
-.menu{
+.menu {
   justify-self:center;
   align-self: center;
   background-color: yellow;
@@ -22,40 +22,40 @@
   
 }
 
-.main_li{
+.main_li {
   list-style-type: none;
   flex-direction: row;
 }
 
 .lots_li,
-.auction_li{
+.auction_li {
   list-style-type: circle;
   flex-direction: row;
 }
 
-.list_ul{
+.list_ul {
   display: flex;
   justify-content: space-between;
 }
 
-.logo{
+.logo {
   width: auto;
   height: 105px;
 }
 
-.background_svg_head{
+.background_svg_head {
   width: 148px;
   height: 105px;
 }
 
-.logo_head{
+.logo_head {
   position: relative;
   width: 129.11px;
   height: 104.65px;
   left:0;
   bottom: 0;
 }
-.adress_head{
+.adress_head {
   width: 240.52px;
   height: 98px;
   justify-self: end;
@@ -64,4 +64,36 @@
   line-height: 24.3px;
   font-weight: 400;
   font-style: normal;
+}
+
+.nomberphone_head {
+  width: 240px;
+  height: 24px;
+  top: 5px;
+  left: 786.52px;
+  gap: 0px;
+  border: 1px 0px 0px 0px;
+  opacity: 0px;
+  text-underline-position: under;
+}
+.email_head {
+width: 240px;
+height: 24px;
+top: 29px;
+left: 786px;
+gap: 0px;
+border: 1px 0px 0px 0px;
+opacity: 0px;
+}
+
+.place_head{
+  width: 237px;
+  height: 49px;
+  top: 54px;
+  left: 787px;
+  gap: 0px;
+  opacity: 0px;  
+}
+.main_no_decor {
+  text-decoration: none;
 }
