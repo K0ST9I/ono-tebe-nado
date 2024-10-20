@@ -205,16 +205,13 @@ text-underline-offset: 2.5px;
 /* ПОДЗАГОЛОВОК COVER*//* ПОДЗАГОЛОВОК COVER*//* ПОДЗАГОЛОВОК COVER*//* ПОДЗАГОЛОВОК COVER*/
 
 .subtitle_cover {
-  display: flex;
-  grid-area: 4/1/5/4;
-  justify-content: start;
-  align-items: end;
+  grid-area: 4/1/5/3;
   color: white;
   font-size: 22px;
   font-weight: 400;
   line-height: 28px;
   text-align: left; 
-  padding-bottom: 62px;
+  padding-top: 128px;
   padding-left: 80px;
   text-transform: uppercase; 
   word-spacing: 16px;
@@ -230,7 +227,7 @@ text-underline-offset: 2.5px;
 
 .button_cover {
     display: flex;
-    grid-area: 4/3/4/5;
+    grid-area: 4/3/5/4;
     color: white;
     width: 256px;
     height: 51px;
@@ -242,7 +239,7 @@ text-underline-offset: 2.5px;
     align-items: center;
     text-transform: uppercase;
     place-self: center;
-    margin-top: 65px;
+    margin-top: 115px;
     margin-left: 10px;
     z-index: 2;
 }
@@ -264,37 +261,233 @@ text-underline-offset: 2.5px;
 
 /*overley*//*overley*//*overley*//*overley*//*overley*/
 
-.overley {
-  display: grid;
+.overley{
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
+}
+
+.cover_position {
+  display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 300px 120px 120px auto;
   grid-column-gap: 0px;
   grid-row-gap: 0px;
 }
 
-/*copy*//*copy*//*copy*//*copy*//*copy*/
+/*section lots*//*section lots*//*section lots*//*section lots*//*section lots*//*section lots*/
 
-.lots_3 {
-  margin-top: 100px;
-  width: 1100px;
-  height: 500px;
+.lots{
+  margin: 179px auto 0;
+  display: grid;
+  width: 1052px;
+  height: 692px;
+  grid-template-rows: 74px 563px auto;
+  grid-column-gap: 0;
+  grid-row-gap: 0;
 }
 
-.back_img_2 {
-  background-image: url(/images/cover.jpg);
+.lots_sbtwn {
+  grid-area: 2/1/3/2;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card1_position {
+  display: flex;
+  width: 334px;
+  height: 563px;
+  grid-area: 2/1/3/2;
+}
+
+.img_back_card1{
+  background-image: url(/images/card-lot-01.jpg);
   width: 100%;
   height: 100%;
   background-size: cover;
-  background-size: 100% 100%;
+  background-position: center;
 }
 
-.text {
-  color: white;
-  font-size: 22px;
-  text-align: center;
-  vertical-align: middle;
+.card1_parameter{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
 
+.title_lots {
+  margin-top: 0;
+  margin-left: 40px;
+  width: 121px;
+  height: 47px;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 46.96px;
+  text-align: left;
+  text-transform: uppercase;
+
+}
+
+.title_card1 {
+  margin-top: 52px;
+  width: 254px;
+  height: 82px;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 26.4px;
+  text-align: left;
+  color: white;
+  text-transform: uppercase;
+
+}
+
+.paragraph_card1 {
+  margin-bottom: 46px;
+  width: 254px;
+  height: 144px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  color: white;
+}
+
+.card1_title_link {
+  text-underline-offset: 2px;
+}
+
+/*card 2*//*card 2*//*card 2*//*card 2*//*card 2*//*card 2*//*card 2*/
+
+.card2_position {
+  display: flex;
+  width: 334px;
+  height: 563px;
+  grid-area: 2/1/3/2;
+}
+
+.img_back_card2{
+  background-image: url(/images/card-lot-02.jpg);
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+.card2_parameter{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.title_card2 {
+  margin-top: 52px;
+  width: 254px;
+  height: 110px;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 26.4px;
+  text-align: left;
+  color: white;
+  text-transform: uppercase;
+
+}
+
+.paragraph_card2 {
+  margin-top: -5px;
+  width: 254px;
+  height: 360px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  color: white;
+}
+
+.card2_title_link {
+  text-underline-offset: 2px;
+}
+
+/*card 3*//*card 3*//*card 3*//*card 3*//*card 3*//*card 3*//*card 3*/
+
+.card3_position {
+  display: flex;
+  width: 334px;
+  height: 563px;
+  grid-area: 2/1/3/2;
+}
+
+.img_back_card3{
+  background-image: url(/images/card-lot-03.jpg);
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+.card3_parameter{
+  
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.title_card3 {
+  margin-top: 3px;
+  width: 254px;
+  height: 110px;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 26.4px;
+  text-align: left;
+  color: white;
+  text-transform: uppercase;
+
+}
+
+.paragraph_card3 {
+  width: 254px;
+  height: 264px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  color: white;
+}
+
+.span_card3 {
+font-size: 20px;
+font-weight: 400;
+line-height: 24px;
+letter-spacing: 0.13em;
+text-align: left;
+}
+
+.card3_title_link {
+  text-underline-offset: 2px;
+}
+
+/* ссылка посмотреть больше*//* ссылка посмотреть больше*//* ссылка посмотреть больше*/
+
+.seamore_link {
+  width: 192px;
+  height: 23px;
+  margin-left: 40px;
+  grid-area: 3/1/4/2;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 23.48px;
+  text-align: left;
+  align-self: flex-end;
+}
+
+.link_seamore_lots {
+text-underline-offset: 5px;
 }
