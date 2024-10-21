@@ -293,6 +293,8 @@ text-underline-offset: 2.5px;
   justify-content: space-between;
 }
 
+/* card 1*//* card 1*//* card 1*//* card 1*//* card 1*//* card 1*//* card 1*/
+
 .card1_position {
   display: flex;
   width: 334px;
@@ -490,4 +492,148 @@ text-align: left;
 
 .link_seamore_lots {
 text-underline-offset: 5px;
+}
+
+/*Секция ЭБАУТ*//*Секция ЭБАУТ*//*Секция ЭБАУТ*//*Секция ЭБАУТ*//*Секция ЭБАУТ*/
+
+.about {
+  margin: 146px auto 0;
+  width: 1052px;
+  height: 595px; 
+  display: grid;
+  grid-template-columns: 352px 700px;
+  grid-template-rows: 1fr;
+  grid-column-gap: 0;
+  grid-row-gap: 0;
+
+}
+
+/*ЛОГОТИП*//*ЛОГОТИП*//*ЛОГОТИП*//*ЛОГОТИП*//*ЛОГОТИП*//*ЛОГОТИП*//*ЛОГОТИП*//*ЛОГОТИП*/
+
+.about_logo_position {
+  padding-top: 35px;
+  grid-area: 1/1/2/2;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  width: 334px;
+  height: 563px;
+}
+
+.background_logo_circle {
+  grid-area: 1/1/2/2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 240px;
+  height: 240px;
+  background: rgb(0, 0, 0); 
+  -moz-border-radius: 120px; 
+  -webkit-border-radius: 120px; 
+  border-radius: 120px;
+}
+
+.about_logo {
+  width: 148px;
+  height: 114px;
+  color: white;
+}
+
+/*Столбец ОБ АУКЦИОНЕ*//*Столбец ОБ АУКЦИОНЕ*//*Столбец ОБ АУКЦИОНЕ*/
+
+.about_content_position {
+  display: flex;
+  width: 693px;
+  height: 449px;
+  align-self: flex-end;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.p1_and_p2 {
+  display: flex;
+  width: 693px;
+  height: 312px;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.title_about_auction {
+  margin-top: -8px;
+  margin-left: 6px;
+  width: 291px;
+  height: 47px;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 46.96px;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.content1_about_auction {
+  margin-left: 6px;
+  width: 688px;
+  height: 120px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.01em;
+  text-align: left; 
+}
+
+.p1_paphos{
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+}
+
+.p1_our {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  text-align: left;
+}
+
+.p1_in_apple {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.01em;
+  text-align: left;
+}
+
+.p1_diary {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  text-align: left;
+}
+
+.content2_about_auction {
+  margin-left: 6px;
+  width: 693px;
+  height: 168px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;  
+}
+
+.p2_they {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+  text-align: left;
+}
+
+.p2_bad {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.01em;
+  text-align: left;
 }
