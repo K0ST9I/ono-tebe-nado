@@ -10,16 +10,14 @@ body{
   display: grid;
   grid-template-columns: 453px 240.52px auto;
   grid-template-rows: 1fr;
-  background-color: aliceblue;
   width: 1052px;
   height: 105px;
   margin: 92px 24px 0;
   
 }
 
-.menu {
+.menu{
   align-self: center;
-  background-color: yellow;
   width: 391.48px;
   height: 22px;
   margin-left: 26.52px;
@@ -27,8 +25,7 @@ body{
   line-height: 21.13px;
   font-weight: 400;
   font-style: normal;
-  padding-top: 3px;
-  text-transform: underline;  
+  padding-top: 3px;  
   letter-spacing: 1%;
   text-underline-offset: 4px;
 }
@@ -494,7 +491,7 @@ text-align: left;
 text-underline-offset: 5px;
 }
 
-/*Секция ЭБАУТ*//*Секция ЭБАУТ*//*Секция ЭБАУТ*//*Секция ЭБАУТ*//*Секция ЭБАУТ*/
+/*Секция ABOUT*//*Секция ABOUT*//*Секция ABOUT*//*Секция ABOUT*/
 
 .about {
   margin: 146px auto 0;
@@ -508,7 +505,7 @@ text-underline-offset: 5px;
 
 }
 
-/*ЛОГОТИП*//*ЛОГОТИП*//*ЛОГОТИП*//*ЛОГОТИП*//*ЛОГОТИП*//*ЛОГОТИП*//*ЛОГОТИП*//*ЛОГОТИП*/
+/*ЛОГОТИП ABOUT*//*ЛОГОТИП ABOUT*//*ЛОГОТИП ABOUT*//*ЛОГОТИП ABOUT*/
 
 .about_logo_position {
   padding-top: 35px;
@@ -636,4 +633,71 @@ text-underline-offset: 5px;
   line-height: 24px;
   letter-spacing: 0.01em;
   text-align: left;
+}
+
+/*FOOTER*//*FOOTER*//*FOOTER*//*FOOTER*//*FOOTER*/
+
+.footer {
+  margin: 180px auto 88px;
+  width: 1000px;
+  height: 98px;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: 1fr;
+  gap: 0;
+}
+
+/*ADRESS footer*//*ADRESS footer*//*ADRESS footer*//*ADRESS footer*/
+
+.adress_footer {
+margin-top: 2px;
+width: 240.52px;
+height: 98px;
+grid-area: 1/1/2/2;
+justify-self: flex-start;
+font-size: 18px;
+font-weight: 400;
+line-height: 24.3px;
+letter-spacing: 0.01em;
+text-align: left;
+
+}
+
+/*menu footer*//*menu footer*//*menu footer*//*menu footer*//*menu footer*/
+
+.menu_footer {
+margin-top: 2px;
+width: 149px;
+height: 64px;
+grid-area: 1/2/2/3;
+align-self: flex-start;
+justify-self: center;
+font-size: 18px;
+font-weight: 400;
+line-height: 21.13px;
+text-align: center;
+text-underline-offset: 4px;
+}
+
+.list_ul_footer,
+.lots_li_footer,
+.auction_li_footer {
+  list-style-type: none;
+}
+
+/*LOGO FOOTER */ /*LOGO FOOTER *//*LOGO FOOTER *//*LOGO FOOTER */
+
+.logo_footer {
+display: flex;
+justify-content: space-between;
+justify-self: end;
+width: 240px;
+height: 48px;
+}
+
+#img_ft_yt,
+#img_ft_vk,
+#img_ft_pt {
+  width: 48px;
+  height: 48px;
 }
