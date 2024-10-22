@@ -1,10 +1,9 @@
-
 body{
   display: flex;
   flex-direction: column;
 }
 
-/* Настройки HEADER */ /* Настройки HEADER */ /* Настройки HEADER */ /* Настройки HEADER */ 
+/* Настройки HEADER */
 
 .header {
   display: grid;
@@ -17,28 +16,29 @@ body{
 }
 
 .menu{
+  grid-area: 1/1/2/2;
   align-self: center;
   width: 391.48px;
   height: 22px;
   margin-left: 26.52px;
-  font-size: 18px;
-  line-height: 21.13px;
+  padding-top: 3px;
   font-weight: 400;
+  font-size: 18px;
   font-style: normal;
-  padding-top: 3px;  
+  line-height: 21.13px;  
   letter-spacing: 1%;
   text-underline-offset: 4px;
 }
 
 .main_li {
-  list-style-type: none;
   flex-direction: row;
+  list-style-type: none;
 }
 
 .lots_li,
 .auction_li {
-  list-style-type: circle;
   flex-direction: row;
+  list-style-type: circle;
 }
 
 .list_ul {
@@ -47,62 +47,69 @@ body{
 }
 
 .logo {
+  display: grid;
+  grid-area: 1/2/2/3;
+  place-self: start;
+  width: 140px;
   height: 105px;
   margin-left: 10px;
-  margin-top: 1px;
+  
 }
 
-.background_svg_head {
-  width: 148px;
+.logo_position {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 135px;
   height: 105px;
+  margin-top: 2px;
+  margin-left: -2px;
 }
 
 .logo_head {
-  position: relative;
-  width: 129.11px;
-  height: 104.65px;
-  left:0;
-  bottom: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .adress_head {
+  grid-area: 1/3/2/4;
+  justify-self: end;
   width: 240.52px;
   height: 98px;
-  justify-self: end;
-  font-size: 18px;
-  line-height: 24.3px;
-  font-weight: 400;
-  font-style: normal;
   margin-top: 6.5px;
   margin-right: 24.5px;
+  font-weight: 400;
+  font-size: 18px;
+  font-style: normal;
+  line-height: 24.3px;
 }
 
 .nomberphone_head {
-  width: 240px;
-  height: 24px;
   top: 5px;
   left: 786.52px;
   gap: 0px;
+  width: 240px;
+  height: 24px;
   border: 1px 0px 0px 0px;
   opacity: 0px;
-  text-underline-position: under;
   text-underline-offset: 0.8px;
+  text-underline-position: under;
 }
 
 .email_head {
-width: 240px;
-height: 24px;
 top: 29px;
 left: 786px;
 gap: 0px;
+width: 240px;
+height: 24px;
 border: 1px 0px 0px 0px;
 opacity: 0px;
 text-underline-offset: 2.5px;
 }
 
 .place_head {
-  font-size: 18px;
   font-weight: 400;
+  font-size: 18px;
   line-height: 24.3px;
 }
 
@@ -110,48 +117,48 @@ text-underline-offset: 2.5px;
   text-decoration: none;
 }
 
-/* Секция COVER */ /* Секция COVER */ /* Секция COVER */ /* Секция COVER */ /* Секция COVER */
+/* Секция COVER */
 
 .cover {
-  margin-top: 96px;
+  display: grid;
   width: 1100px;
   height: 757px;
-  display: grid;
+  margin-top: 96px;
 }
 
-/* ЗАГОЛОВОК *//* ЗАГОЛОВОК *//* ЗАГОЛОВОК *//* ЗАГОЛОВОК *//* ЗАГОЛОВОК */
+/* ЗАГОЛОВОК */
 
 .title_for_all {
+  z-index: 2;
   display: flex;
   justify-content: start;
   align-items: end;
   color: white;
-  z-index: 2;
 }
 
 .title1 {
   grid-area: 1/1/2/3;
-  padding-left: 50px;
   padding-bottom: 20px;
+  padding-left: 50px;
    
 }
 .title2 {
   grid-area: 2/1/3/4;
-  padding-left: 340px;
   padding-bottom: 20px;
+  padding-left: 340px;
 }
 
 .title3 {
   grid-area: 3/2/4/4;
-  padding-left: 265px;
   padding-bottom: 20px;
+  padding-left: 265px;
 }
 
-/* ЗАГОЛОВОК SPAN *//* ЗАГОЛОВОК SPAN *//* ЗАГОЛОВОК SPAN *//* ЗАГОЛОВОК SPAN */
+/* ЗАГОЛОВОК SPAN */
 
 .O {
-  font-size: 100px;
   font-weight: 700;
+  font-size: 100px;
   line-height: 115px;
   letter-spacing: 0.3em;
   text-align: left;
@@ -159,32 +166,32 @@ text-underline-offset: 2.5px;
 }
 
 .NO {
-  font-size: 100px;
   font-weight: 700;
+  font-size: 100px;
   line-height: 115px;
   letter-spacing: 0.6em;
   text-align: left;
 }
 
 .TE {
-  font-size: 100px;
   font-weight: 700;
+  font-size: 100px;
   line-height: 100px;
   letter-spacing: 0.3em;
   text-align: left;
 }
 
 .BE {
-  font-size: 100px;
   font-weight: 700;
+  font-size: 100px;
   line-height: 100px;
   letter-spacing: 0.6em;
   text-align: left;
 }
 
 .NO {
-  font-size: 100px;
   font-weight: 700;
+  font-size: 100px;
   line-height: 100px;
   letter-spacing: 0.6em;
   text-align: right;
@@ -192,27 +199,27 @@ text-underline-offset: 2.5px;
 }
 
 .AD {
-  font-size: 100px;
   font-weight: 700;
+  font-size: 100px;
   line-height: 100px;
   letter-spacing: 0.3em;
   text-align: right;
 }
 
-/* ПОДЗАГОЛОВОК COVER*//* ПОДЗАГОЛОВОК COVER*//* ПОДЗАГОЛОВОК COVER*//* ПОДЗАГОЛОВОК COVER*/
+/* ПОДЗАГОЛОВОК COVER*/
 
 .subtitle_cover {
-  grid-area: 4/1/5/3;
-  color: white;
-  font-size: 22px;
-  font-weight: 400;
-  line-height: 28px;
-  text-align: left; 
+  z-index: 2;
+  grid-area: 4/1/5/3; 
   padding-top: 128px;
   padding-left: 80px;
+  color: white;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 28px;
+  text-align: left;
   text-transform: uppercase; 
   word-spacing: 16px;
-  z-index: 2;
 
 }
 
@@ -220,43 +227,43 @@ text-underline-offset: 2.5px;
   word-spacing: 20px;
 }
 
-/* КНОПКА *//* КНОПКА *//* КНОПКА *//* КНОПКА *//* КНОПКА */
+/* КНОПКА */
 
 .button_cover {
+    z-index: 2;
     display: flex;
     grid-area: 4/3/5/4;
-    color: white;
-    width: 256px;
-    height: 51px;
-    border: 1px solid white;
-    font-size: 22px;
-    font-weight: 500;
-    line-height: 25.83px;
+    place-self: center;
     justify-content: center;
     align-items: center;
-    text-transform: uppercase;
-    place-self: center;
+    width: 256px;
+    height: 51px;
     margin-top: 115px;
     margin-left: 10px;
-    z-index: 2;
+    border: 1px solid white;
+    color: white;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 25.83px;
+    text-transform: uppercase;
 }
 
 .btn_stavka {
   text-decoration: none;
 }
 
-/*ФОН*//*ФОН*//*ФОН*//*ФОН*//*ФОН*//*ФОН*//*ФОН*//*ФОН*/
+/*ФОН*/
 
 .img_back_cover {
-  background-image: url(/images/cover.jpg);
+  grid-area: 1/1/5/4;
   width: 100%;
   height: 100%;
-  background-size: cover;
+  background-image: url(/images/cover.jpg);
   background-position: center;
-  grid-area: 1/1/5/4;
+  background-size: cover;
 }
 
-/*overley*//*overley*//*overley*//*overley*//*overley*/
+/*overley*/
 
 .overley{
   width: 100%;
@@ -272,57 +279,57 @@ text-underline-offset: 2.5px;
   grid-row-gap: 0px;
 }
 
-/*section lots*//*section lots*//*section lots*//*section lots*//*section lots*//*section lots*/
+/*section lots*/
 
 .lots{
-  margin: 179px auto 0;
   display: grid;
-  width: 1052px;
-  height: 692px;
   grid-template-rows: 74px 563px auto;
   grid-column-gap: 0;
   grid-row-gap: 0;
+  width: 1052px;
+  height: 692px;
+  margin: 179px auto 0;
 }
 
 .lots_sbtwn {
-  grid-area: 2/1/3/2;
   display: flex;
+  grid-area: 2/1/3/2;
   justify-content: space-between;
 }
 
-/* card 1*//* card 1*//* card 1*//* card 1*//* card 1*//* card 1*//* card 1*/
+/* card 1*/
 
 .card1_position {
   display: flex;
+  grid-area: 2/1/3/2;
   width: 334px;
   height: 563px;
-  grid-area: 2/1/3/2;
 }
 
 .img_back_card1{
-  background-image: url(/images/card-lot-01.jpg);
   width: 100%;
   height: 100%;
-  background-size: cover;
+  background-image: url(/images/card-lot-01.jpg);
   background-position: center;
+  background-size: cover;
 }
 
 .card1_parameter{
-  width: 100%;
-  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
+  height: 100%;
 }
 
 .title_lots {
-  margin-top: 0;
-  margin-left: 40px;
   width: 121px;
   height: 47px;
-  font-size: 40px;
+  margin-top: 0;
+  margin-left: 40px;
   font-weight: 700;
+  font-size: 40px;
   line-height: 46.96px;
   text-align: left;
   text-transform: uppercase;
@@ -330,123 +337,123 @@ text-underline-offset: 2.5px;
 }
 
 .title_card1 {
-  margin-top: 52px;
   width: 254px;
   height: 82px;
-  font-size: 22px;
+  margin-top: 52px;
+  color: white;
   font-weight: 700;
+  font-size: 22px;
   line-height: 26.4px;
   text-align: left;
-  color: white;
   text-transform: uppercase;
 
 }
 
 .paragraph_card1 {
-  margin-bottom: 46px;
   width: 254px;
   height: 144px;
-  font-size: 20px;
+  margin-bottom: 46px;
+  color: white;
   font-weight: 400;
+  font-size: 20px;
   line-height: 24px;
   text-align: left;
-  color: white;
 }
 
 .card1_title_link {
   text-underline-offset: 2px;
 }
 
-/*card 2*//*card 2*//*card 2*//*card 2*//*card 2*//*card 2*//*card 2*/
+/*card 2*/
 
 .card2_position {
   display: flex;
+  grid-area: 2/1/3/2;
   width: 334px;
   height: 563px;
-  grid-area: 2/1/3/2;
 }
 
 .img_back_card2{
-  background-image: url(/images/card-lot-02.jpg);
   width: 100%;
   height: 100%;
-  background-size: cover;
+  background-image: url(/images/card-lot-02.jpg);
   background-position: center;
+  background-size: cover;
 }
 
 .card2_parameter{
-  width: 100%;
-  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  width: 100%;
+  height: 100%;
 }
 
 .title_card2 {
-  margin-top: 52px;
   width: 254px;
   height: 110px;
-  font-size: 22px;
+  margin-top: 52px;
+  color: white;
   font-weight: 700;
+  font-size: 22px;
   line-height: 26.4px;
   text-align: left;
-  color: white;
   text-transform: uppercase;
 
 }
 
 .paragraph_card2 {
-  margin-top: -5px;
   width: 254px;
   height: 360px;
-  font-size: 20px;
+  margin-top: -5px;
+  color: white;
   font-weight: 400;
+  font-size: 20px;
   line-height: 24px;
   text-align: left;
-  color: white;
 }
 
 .card2_title_link {
   text-underline-offset: 2px;
 }
 
-/*card 3*//*card 3*//*card 3*//*card 3*//*card 3*//*card 3*//*card 3*/
+/*card 3*/
 
 .card3_position {
   display: flex;
+  grid-area: 2/1/3/2;
   width: 334px;
   height: 563px;
-  grid-area: 2/1/3/2;
 }
 
 .img_back_card3{
-  background-image: url(/images/card-lot-03.jpg);
   width: 100%;
   height: 100%;
-  background-size: cover;
+  background-image: url(/images/card-lot-03.jpg);
   background-position: center;
+  background-size: cover;
 }
 
 .card3_parameter{
-  
-  width: 100%;
-  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  
+  width: 100%;
+  height: 100%;
 }
 
 .title_card3 {
-  margin-top: 3px;
   width: 254px;
   height: 110px;
-  font-size: 22px;
+  margin-top: 3px;
+  color: white;
   font-weight: 700;
+  font-size: 22px;
   line-height: 26.4px;
   text-align: left;
-  color: white;
   text-transform: uppercase;
 
 }
@@ -454,16 +461,16 @@ text-underline-offset: 2.5px;
 .paragraph_card3 {
   width: 254px;
   height: 264px;
-  font-size: 20px;
+  color: white;
   font-weight: 400;
+  font-size: 20px;
   line-height: 24px;
   text-align: left;
-  color: white;
 }
 
 .span_card3 {
-font-size: 20px;
 font-weight: 400;
+font-size: 20px;
 line-height: 24px;
 letter-spacing: 0.13em;
 text-align: left;
@@ -473,61 +480,61 @@ text-align: left;
   text-underline-offset: 2px;
 }
 
-/* ссылка посмотреть больше*//* ссылка посмотреть больше*//* ссылка посмотреть больше*/
+/* ссылка посмотреть больше*/
 
 .seamore_link {
+  grid-area: 3/1/4/2;
+  align-self: flex-end;
   width: 192px;
   height: 23px;
   margin-left: 40px;
-  grid-area: 3/1/4/2;
-  font-size: 20px;
   font-weight: 400;
+  font-size: 20px;
   line-height: 23.48px;
   text-align: left;
-  align-self: flex-end;
 }
 
 .link_seamore_lots {
 text-underline-offset: 5px;
 }
 
-/*Секция ABOUT*//*Секция ABOUT*//*Секция ABOUT*//*Секция ABOUT*/
+/*Секция ABOUT*/
 
-.about {
-  margin: 146px auto 0;
-  width: 1052px;
-  height: 595px; 
+.about { 
   display: grid;
   grid-template-columns: 352px 700px;
   grid-template-rows: 1fr;
   grid-column-gap: 0;
   grid-row-gap: 0;
+  width: 1052px;
+  height: 595px;
+  margin: 146px auto 0;
 
 }
 
-/*ЛОГОТИП ABOUT*//*ЛОГОТИП ABOUT*//*ЛОГОТИП ABOUT*//*ЛОГОТИП ABOUT*/
+/*ЛОГОТИП ABOUT*/
 
 .about_logo_position {
-  padding-top: 35px;
-  grid-area: 1/1/2/2;
   display: flex;
+  grid-area: 1/1/2/2;
   justify-content: center;
   align-items: start;
   width: 334px;
   height: 563px;
+  padding-top: 35px;
 }
 
 .background_logo_circle {
-  grid-area: 1/1/2/2;
   display: flex;
+  grid-area: 1/1/2/2;
   justify-content: center;
   align-items: center;
   width: 240px;
-  height: 240px;
-  background: rgb(0, 0, 0); 
+  height: 240px; 
   -moz-border-radius: 120px; 
   -webkit-border-radius: 120px; 
   border-radius: 120px;
+  background: rgb(0, 0, 0);
 }
 
 .about_logo {
@@ -536,144 +543,144 @@ text-underline-offset: 5px;
   color: white;
 }
 
-/*Столбец ОБ АУКЦИОНЕ*//*Столбец ОБ АУКЦИОНЕ*//*Столбец ОБ АУКЦИОНЕ*/
+/*Столбец ОБ АУКЦИОНЕ*/
 
 .about_content_position {
   display: flex;
-  width: 693px;
-  height: 449px;
-  align-self: flex-end;
   flex-direction: column;
   justify-content: space-between;
+  align-self: flex-end;
+  width: 693px;
+  height: 449px;
 }
 
 .p1_and_p2 {
   display: flex;
-  width: 693px;
-  height: 312px;
   flex-direction: column;
   justify-content: space-between;
+  width: 693px;
+  height: 312px;
 }
 
 .title_about_auction {
-  margin-top: -8px;
-  margin-left: 6px;
   width: 291px;
   height: 47px;
-  font-size: 40px;
+  margin-top: -8px;
+  margin-left: 6px;
   font-weight: 700;
+  font-size: 40px;
   line-height: 46.96px;
   text-align: left;
   text-transform: uppercase;
 }
 
 .content1_about_auction {
-  margin-left: 6px;
   width: 688px;
   height: 120px;
-  font-size: 20px;
+  margin-left: 6px;
   font-weight: 400;
+  font-size: 20px;
   line-height: 24px;
   letter-spacing: 0.01em;
   text-align: left; 
 }
 
 .p1_paphos{
-  font-size: 20px;
   font-weight: 400;
+  font-size: 20px;
   line-height: 24px;
   text-align: left;
 }
 
 .p1_our {
-  font-size: 20px;
   font-weight: 400;
+  font-size: 20px;
   line-height: 24px;
   letter-spacing: 0.02em;
   text-align: left;
 }
 
 .p1_in_apple {
-  font-size: 20px;
   font-weight: 400;
+  font-size: 20px;
   line-height: 24px;
   letter-spacing: -0.01em;
   text-align: left;
 }
 
 .p1_diary {
-  font-size: 20px;
   font-weight: 400;
+  font-size: 20px;
   line-height: 24px;
   letter-spacing: 0.03em;
   text-align: left;
 }
 
 .content2_about_auction {
-  margin-left: 6px;
   width: 693px;
   height: 168px;
-  font-size: 20px;
+  margin-left: 6px;
   font-weight: 400;
+  font-size: 20px;
   line-height: 24px;
   text-align: left;  
 }
 
 .p2_they {
-  font-size: 20px;
   font-weight: 400;
+  font-size: 20px;
   line-height: 24px;
   letter-spacing: 0.04em;
   text-align: left;
 }
 
 .p2_bad {
-  font-size: 20px;
   font-weight: 400;
+  font-size: 20px;
   line-height: 24px;
   letter-spacing: 0.01em;
   text-align: left;
 }
 
-/*FOOTER*//*FOOTER*//*FOOTER*//*FOOTER*//*FOOTER*/
+/*FOOTER*/
 
 .footer {
-  margin: 180px auto 88px;
-  width: 1000px;
-  height: 98px;
   display: grid;
   grid-template-columns: repeat(3,1fr);
   grid-template-rows: 1fr;
   gap: 0;
+  width: 1000px;
+  height: 98px;
+  margin: 180px auto 88px;
 }
 
-/*ADRESS footer*//*ADRESS footer*//*ADRESS footer*//*ADRESS footer*/
+/*ADRESS footer*/
 
 .adress_footer {
-margin-top: 2px;
-width: 240.52px;
-height: 98px;
 grid-area: 1/1/2/2;
 justify-self: flex-start;
-font-size: 18px;
+width: 240.52px;
+height: 98px;
+margin-top: 2px;
 font-weight: 400;
+font-size: 18px;
 line-height: 24.3px;
 letter-spacing: 0.01em;
 text-align: left;
 
 }
 
-/*menu footer*//*menu footer*//*menu footer*//*menu footer*//*menu footer*/
+/*menu footer*/
 
 .menu_footer {
-margin-top: 2px;
+grid-area: 1/2/2/3;
+justify-self: center;
+align-self: flex-start;
 width: 149px;
 height: 64px;
-grid-area: 1/2/2/3;
-align-self: flex-start;
-justify-self: center;
-font-size: 18px;
+margin-top: 2px;
 font-weight: 400;
+font-size: 18px;
 line-height: 21.13px;
 text-align: center;
 text-underline-offset: 4px;
@@ -685,12 +692,12 @@ text-underline-offset: 4px;
   list-style-type: none;
 }
 
-/*LOGO FOOTER */ /*LOGO FOOTER *//*LOGO FOOTER *//*LOGO FOOTER */
+/*LOGO FOOTER */
 
 .logo_footer {
 display: flex;
-justify-content: space-between;
 justify-self: end;
+justify-content: space-between;
 width: 240px;
 height: 48px;
 }
